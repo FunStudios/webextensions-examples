@@ -1,17 +1,17 @@
 {
 
-  "description": "Adds a solid red border to all webpages matching mozilla.org. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#borderify",
+  "description": "Adds a blue border to Scratch",
   "manifest_version": 2,
-  "name": "Borderify",
+  "name": "cc",
   "version": "1.0",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/borderify",
+  "homepage_url": "https://github.com/FunStudios/webextensions-examples/edit/master/borderify/manifest.json",
   "icons": {
     "48": "icons/border-48.png"
   },
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
+      "matches": ["*://scratch.mit.edu/*"],
       "js": ["borderify.js"]
     }
   ]
